@@ -8,3 +8,6 @@
 
 (defn init-grid []
   (vec (repeat 9 nil)))
+
+(defn make-move [grid]
+  (assoc grid (rand-nth (range 10)) 1))
